@@ -36,4 +36,4 @@ modules:
     sources:
       - type: git
         url: https://notabug.org/Vandarin/TuxScape.git
-        commit: f74ebef2c2375a681c8a89c2486763dda18cb4fe
+        commit: ced6ce70574d8d1d36e649c6b6822f6bc6af147e
