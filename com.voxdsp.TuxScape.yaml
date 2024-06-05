@@ -35,5 +35,5 @@ modules:
       - install -Dm 0644 flatpak/tuxscape.png ${FLATPAK_DEST}/share/icons/hicolor/128x128/apps/tuxscape.png
     sources:
       - type: git
-        url: https://notabug.org/Vandarin/TuxScape.git
-        commit: f74ebef2c2375a681c8a89c2486763dda18cb4fe
+        url: https://github.com/mrbid/TuxScape.git
+        commit: e3895ba48d08ca14de1a3f9582636a53d061d34c
