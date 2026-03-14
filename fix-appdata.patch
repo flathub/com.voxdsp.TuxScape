@@ -1,0 +1,45 @@
+From 7df453aab2c1781f0b647cf712bca044eb3ac481 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Sabri=20=C3=9Cnal?= <yakushabb@gmail.com>
+Date: Sat, 14 Mar 2026 22:23:54 +0300
+Subject: [PATCH] Fix appdata paper cuts
+
+---
+ flatpak/tuxscape.appdata.xml | 10 +++++++---
+ 1 file changed, 7 insertions(+), 3 deletions(-)
+
+diff --git a/flatpak/tuxscape.appdata.xml b/flatpak/tuxscape.appdata.xml
+index 73c2a72..f268063 100644
+--- a/flatpak/tuxscape.appdata.xml
++++ b/flatpak/tuxscape.appdata.xml
+@@ -3,7 +3,9 @@
+ 	<id>com.voxdsp.TuxScape</id>
+ 	<metadata_license>CC-BY-4.0</metadata_license>
+ 	<project_license>GPL-2.0-only</project_license>
+-	<developer_name>James William Fletcher</developer_name>
++	<developer id="com.voxdsp">
++		<name>James William Fletcher</name>
++	</developer>
+ 	<launchable type="desktop-id">com.voxdsp.TuxScape.desktop</launchable>
+ 	<name>TuxScape</name>
+ 	<summary>Mythical adventure as Tux!</summary>
+@@ -25,13 +27,15 @@
+ 	</description>
+     <screenshots>
+ 		<screenshot type="default">
+-			<image>https://notabug.org/Vandarin/TuxScape/raw/master/screenshot.png</image>
++			<image>https://imgproxy.flathub.org/insecure/dpr:2/f:avif/rs:fill-down/aHR0cHM6Ly9kbC5mbGF0aHViLm9yZy9tZWRpYS9jb20vdm94ZHNwL1R1eFNjYXBlLzVlNDZiZjJmZjhiNmZiZjAyMWVlOTcyYzU4N2MyNzE0L3NjcmVlbnNob3RzL2ltYWdlLTFfb3JpZy5wbmc</image>
+ 			<caption>Tux with his starter knife and groot punching bag.</caption>
+ 		</screenshot>
+ 	</screenshots>
+ 	<url type="homepage">https://github.com/mrbid/TuxScape</url>
++	<url type="bugtracker">https://github.com/mrbid/TuxScape/issues</url>
++	<url type="vcs-browser">https://github.com/mrbid/TuxScape</url>
+ 	<releases>
+ 		<release version="1.2.5" date="2024-06-08" />
+ 	</releases>
+-	<content_rating type="oars-1.0" />
++	<content_rating type="oars-1.1" />
+ </component>
+-- 
+2.53.0
+
